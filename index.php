@@ -7,16 +7,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap" rel="stylesheet" />
   <title>Podcast Informatizando</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link rel="stylesheet" href="css/form.css">
-  <link rel="stylesheet" href="css/rodape.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <header>
-  <a href="index.php">
-    <img src="img/ifrn-logo.png" alt="logo-ifrn" />
-  </a>
-  <h1>Extensão - Podcast Informatizando</h1>
+  <?php
+    require_once "header/header.php";
+  ?>
 </header>
 
 <section class="hero">

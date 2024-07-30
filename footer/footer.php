@@ -21,7 +21,7 @@
             name="logo-instagram"></ion-icon> </span></a>
       <a href="https://www.linkedin.com/in/gabriel-mendes-bb5571264/" target="_blank" class="botao"><span> <ion-icon
             name="logo-linkedin"></ion-icon> </span></a>
-      <a href="https://github.com/prodigycodermendes" target="_blank" class="botao"><span> <ion-icon
+      <a href="https://github.com/GabrielMendessDev" target="_blank" class="botao"><span> <ion-icon
             name="logo-github"></ion-icon> </span></a>
     </div>
     <!--Col Footer 2-->
@@ -30,7 +30,7 @@
   <!--Contant-->
   <div class="main_footer_copy">
     <p class="m-b-footer">
-      &copy; 2023 Podcast Informatizando. Todos os direitos reservados.
+      &copy; 2024 Podcast Informatizando. Todos os direitos reservados.
     </p>
     <p class="by">
       <ion-icon name="people"></ion-icon> Desenvolvido por:

@@ -1,0 +1,389 @@
+/* Geral */
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #191919;
+    color: #fff;
+  }
+  
+  /* Cabeçalho */
+  header {
+    display: flex;
+    flex-direction: row;
+    background-color: #085903;
+    color: #fff;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(1, 163, 192, 0.56) 3px 4px 50px -9px;
+  }
+  
+  header img {
+    max-height: 110px;
+  }
+  
+  /* Navegação */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 100px;
+    color: #fff;
+  }
+  
+  .hero h2 {
+    font-size: 30px;
+  }
+  
+  .hero p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: justify;
+  }
+  
+  .hero img {
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: rgba(1, 163, 192, 0.56) 0px 22px 70px 4px;
+  }
+  
+  .hero img:hover {
+    cursor: pointer;
+  }
+  
+  /* Episódios */
+  .episode {
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    max-width: 70%;
+    background-color: #272727;
+    box-shadow: 3px 4px 23px -9px rgba(1, 163, 192, 0.56);
+    border-radius: 7px;
+  }
+  
+  .descricao {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  
+  .data-de-publicacao {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .episode h3 {
+    font-size: 25px;
+  }
+  
+  .episode h3 a {
+    color: #fff;
+  }
+  
+  .episodes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+  }
+  
+  .episodes h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 40px;
+  }
+  
+  /* Botão */
+  .button {
+    display: inline-block;
+    margin: 5px;
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #15f086,
+      #08b963,
+      #04753f
+    );
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .button:hover {
+    cursor: pointer;
+    background-position: 100% 0;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* Comentários */
+  .coments {
+    padding: 20px;
+    margin: 20px 100px;
+    width: 80%;
+    height: 100%;
+    border-radius: 7px;
+  }
+  
+  .coments h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 100px;
+    color: #fff;
+  }
+  
+  .nome {
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 12px 0 0 12px;
+  }
+  
+  .mensagem {
+    padding: 0 0 0 12px;
+  }
+  
+  .comentario-data {
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    padding: 0 0 12px 12px;
+  }
+  
+  .comentario {
+    box-shadow: rgba(1, 163, 192, 0.56) 3px 4px 50px -9px;
+    border-radius: 12px;
+    padding: 1rem;
+  }
+  
+  /* Box */
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box h2 {
+    background: linear-gradient(to left, #25aae1, #15f086, #08b963, #04753f);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 5s linear infinite;
+    font-size: 35px;
+  }
+  
+  @keyframes animated {
+    to {
+      background-position-x: 161px;
+    }
+  }
+  
+  /* Introdução do Episódio */
+  .introducao-episodio {
+    display: flex;
+  }
+  
+  .introducao-episodio p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 20px;
+    margin-top: 40px;
+    font-weight: 300;
+  }
+  
+  /* Imagens dos Alunos */
+  .img-alunos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+  }
+  
+  .aluno {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+  }
+  
+  .aluno h2 {
+    display: flex;
+  }
+  
+  .aluno img {
+    width: auto;
+    height: 350px;
+    border-radius: 20px;
+  }
+  
+  .aluno h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .aluno a {
+    display: inline-block;
+    margin: 5px;
+    background-image: linear-gradient(
+      to right,
+      #df1580,
+      #6c0a57,
+      #4205a5,
+      #74057c
+    );
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .aluno a:hover {
+    cursor: pointer;
+    background-position: 100% 0;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* Formulário de Contato */
+  form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #272727;
+    border-radius: 10px;
+    box-shadow: rgba(1, 163, 192, 0.56) 3px 4px 50px -9px;
+  }
+  
+  .form h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 50px 100px 20px 100px;
+    color: #fff;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  form textarea {
+    height: 150px;
+  }
+  
+  form input[type="submit"] {
+    display: inline-block;
+    margin: 5px;
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #15f086,
+      #08b963,
+      #04753f
+    );
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  form input[type="submit"]:hover {
+    cursor: pointer;
+    background-position: 100% 0;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* Estilos gerais */
+  p {
+    font-weight: 300;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .button {
+      padding: 20px 30px;
+      text-decoration: none;
+      font-size: 30px;
+      border-radius: 5px;
+    }
+  
+    .hero img {
+      width: 100%;
+    }
+  
+    .img-alunos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  
+    .aluno img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

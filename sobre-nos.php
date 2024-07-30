@@ -93,11 +93,6 @@
   require_once "bd/bd.php";
 ?>
 
-<footer>
-  <?php
-  require_once "footer/footer.php";
-  ?>
-</footer>
 
 </body>
 

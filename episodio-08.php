@@ -108,10 +108,6 @@
   require_once "bd/bd.php";
   ?>
 
-  <?php
-  require_once "footer/footer.php";
-  ?>
-
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

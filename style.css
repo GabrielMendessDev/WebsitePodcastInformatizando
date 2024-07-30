@@ -5,53 +5,69 @@ body {
     padding: 0;
     background-color: #191919;
     color: #fff;
-  }
-  
-  /* Cabeçalho */
-  header {
+}
+
+/* Cabeçalho */
+header {
     display: flex;
     flex-direction: row;
     background-color: #085903;
     color: #fff;
     padding: 30px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     box-shadow: rgba(1, 163, 192, 0.56) 3px 4px 50px -9px;
-  }
-  
-  header img {
+}
+
+header img {
     max-height: 110px;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
   }
-  
-  /* Navegação */
-  nav ul {
+
+/* Navegação */
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  
-  nav li {
+    display: flex;
+    gap: 15px;
+}
+
+nav li {
     display: inline;
     margin-right: 10px;
-  }
-  
-  nav a {
+}
+
+nav a {
     color: #fff;
     text-decoration: none;
-  }
-  
-  /* Hero */
-  .hero {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* Hero */
+.hero {
     text-align: center;
     padding: 100px;
     color: #fff;
-  }
-  
-  .hero h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h2 {
     font-size: 30px;
-  }
-  
-  .hero p {
+}
+
+.hero p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,20 +75,20 @@ body {
     font-size: 20px;
     font-weight: 600;
     text-align: justify;
-  }
-  
-  .hero img {
+}
+
+.hero img {
     border-radius: 20px;
     width: 300px;
     box-shadow: rgba(1, 163, 192, 0.56) 0px 22px 70px 4px;
-  }
-  
-  .hero img:hover {
+}
+
+.hero img:hover {
     cursor: pointer;
-  }
-  
-  /* Episódios */
-  .episode {
+}
+
+/* Episódios */
+.episode {
     padding: 20px;
     margin-bottom: 20px;
     width: 70%;
@@ -80,54 +96,52 @@ body {
     background-color: #272727;
     box-shadow: 3px 4px 23px -9px rgba(1, 163, 192, 0.56);
     border-radius: 7px;
-  }
-  
-  .descricao {
+}
+
+.descricao {
     font-size: 18px;
     font-weight: 300;
-  }
-  
-  .data-de-publicacao {
+}
+
+.data-de-publicacao {
     font-size: 15px;
     font-weight: 300;
     font-style: italic;
-  }
-  
-  .episode h3 {
+}
+
+.episode h3 {
     font-size: 25px;
-  }
-  
-  .episode h3 a {
+}
+
+.episode h3 a {
     color: #fff;
-  }
-  
-  .episodes {
+}
+
+.episodes {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-left: 20px;
-  }
-  
-  .episodes h2 {
+}
+
+.episodes h2 {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     font-size: 40px;
-  }
-  
-  /* Botão */
-  .button {
+}
+
+/* Botão */
+.button {
     display: inline-block;
     margin: 5px;
-    background-image: linear-gradient(
-      to right,
-      #25aae1,
-      #15f086,
-      #08b963,
-      #04753f
-    );
+    background-image: linear-gradient(to right,
+            #25aae1,
+            #15f086,
+            #08b963,
+            #04753f);
     box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
     color: rgb(255, 255, 255);
     padding: 10px 20px;
@@ -140,82 +154,82 @@ body {
     border: none;
     background-size: 300% 100%;
     transition: all 0.4s ease-in-out;
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
     cursor: pointer;
     background-position: 100% 0;
     transition: all 0.4s ease-in-out;
-  }
-  
-  /* Comentários */
-  .coments {
+}
+
+/* Comentários */
+.coments {
     padding: 20px;
     margin: 20px 100px;
     width: 80%;
     height: 100%;
     border-radius: 7px;
-  }
-  
-  .coments h2 {
+}
+
+.coments h2 {
     font-size: 30px;
     text-align: center;
     padding: 20px 100px;
     color: #fff;
-  }
-  
-  .nome {
+}
+
+.nome {
     font-weight: bolder;
     font-size: 20px;
     padding: 12px 0 0 12px;
-  }
-  
-  .mensagem {
+}
+
+.mensagem {
     padding: 0 0 0 12px;
-  }
-  
-  .comentario-data {
+}
+
+.comentario-data {
     font-size: 12px;
     font-weight: 300;
     font-style: italic;
     padding: 0 0 12px 12px;
-  }
-  
-  .comentario {
+}
+
+.comentario {
     box-shadow: rgba(1, 163, 192, 0.56) 3px 4px 50px -9px;
     border-radius: 12px;
     padding: 1rem;
-  }
-  
-  /* Box */
-  .box {
+}
+
+/* Box */
+.box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  
-  .box h2 {
+}
+
+.box h2 {
     background: linear-gradient(to left, #25aae1, #15f086, #08b963, #04753f);
     background-clip: text;
     display: inline;
     color: transparent;
     animation: animated 5s linear infinite;
     font-size: 35px;
-  }
-  
-  @keyframes animated {
+}
+
+@keyframes animated {
     to {
-      background-position-x: 161px;
+        background-position-x: 161px;
     }
-  }
-  
-  /* Introdução do Episódio */
-  .introducao-episodio {
+}
+
+/* Introdução do Episódio */
+.introducao-episodio {
     display: flex;
-  }
-  
-  .introducao-episodio p {
+}
+
+.introducao-episodio p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -225,48 +239,46 @@ body {
     font-size: 20px;
     margin-top: 40px;
     font-weight: 300;
-  }
-  
-  /* Imagens dos Alunos */
-  .img-alunos {
+}
+
+/* Imagens dos Alunos */
+.img-alunos {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px 40px;
-  }
-  
-  .aluno {
+}
+
+.aluno {
     display: flex;
     flex-direction: column;
     padding: 20px 40px;
-  }
-  
-  .aluno h2 {
+}
+
+.aluno h2 {
     display: flex;
-  }
-  
-  .aluno img {
+}
+
+.aluno img {
     width: auto;
     height: 350px;
     border-radius: 20px;
-  }
-  
-  .aluno h2 {
+}
+
+.aluno h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .aluno a {
+}
+
+.aluno a {
     display: inline-block;
     margin: 5px;
-    background-image: linear-gradient(
-      to right,
-      #df1580,
-      #6c0a57,
-      #4205a5,
-      #74057c
-    );
+    background-image: linear-gradient(to right,
+            #df1580,
+            #6c0a57,
+            #4205a5,
+            #74057c);
     box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
     color: rgb(255, 255, 255);
     padding: 10px 20px;
@@ -279,63 +291,61 @@ body {
     border: none;
     background-size: 300% 100%;
     transition: all 0.4s ease-in-out;
-  }
-  
-  .aluno a:hover {
+}
+
+.aluno a:hover {
     cursor: pointer;
     background-position: 100% 0;
     transition: all 0.4s ease-in-out;
-  }
-  
-  /* Formulário de Contato */
-  form {
+}
+
+/* Formulário de Contato */
+form {
     max-width: 500px;
     margin: 30px auto;
     padding: 20px;
     background-color: #272727;
     border-radius: 10px;
     box-shadow: rgba(1, 163, 192, 0.56) 3px 4px 50px -9px;
-  }
-  
-  .form h2 {
+}
+
+.form h2 {
     font-size: 30px;
     text-align: center;
     padding: 50px 100px 20px 100px;
     color: #fff;
-  }
-  
-  form label {
+}
+
+form label {
     display: block;
     margin-bottom: 5px;
     color: #fff;
     font-weight: 600;
-  }
-  
-  form input[type="text"],
-  form input[type="email"],
-  form textarea {
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-  }
-  
-  form textarea {
+}
+
+form textarea {
     height: 150px;
-  }
-  
-  form input[type="submit"] {
+}
+
+form input[type="submit"] {
     display: inline-block;
     margin: 5px;
-    background-image: linear-gradient(
-      to right,
-      #25aae1,
-      #15f086,
-      #08b963,
-      #04753f
-    );
+    background-image: linear-gradient(to right,
+            #25aae1,
+            #15f086,
+            #08b963,
+            #04753f);
     box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
     color: rgb(255, 255, 255);
     padding: 10px 20px;
@@ -348,42 +358,41 @@ body {
     border: none;
     background-size: 300% 100%;
     transition: all 0.4s ease-in-out;
-  }
-  
-  form input[type="submit"]:hover {
+}
+
+form input[type="submit"]:hover {
     cursor: pointer;
     background-position: 100% 0;
     transition: all 0.4s ease-in-out;
-  }
-  
-  /* Estilos gerais */
-  p {
+}
+
+/* Estilos gerais */
+p {
     font-weight: 300;
-  }
-  
-  /* Media Queries */
-  @media screen and (max-width: 768px) {
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
     .button {
-      padding: 20px 30px;
-      text-decoration: none;
-      font-size: 30px;
-      border-radius: 5px;
+        padding: 20px 30px;
+        text-decoration: none;
+        font-size: 30px;
+        border-radius: 5px;
     }
-  
+
     .hero img {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .img-alunos {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
-  
+
     .aluno img {
-      width: 100%;
-      height: auto;
+        width: 100%;
+        height: auto;
     }
-  }
-  
+}

@@ -1,6 +1,6 @@
 <div class="content-main">
     <div class="section">
-        <h2>Episódios de Artigos</h2>
+        <h2>Artigos</h2>
         <div class="artigos-container">
             @foreach ($posts as $post)
                 @if($post->type == 'a')
@@ -20,7 +20,7 @@
     <hr>
 
     <div class="section">
-        <h2>Episódios de Notícias</h2>
+        <h2>Notícias</h2>
         <div class="noticias-container">
             @foreach ($posts as $post)
                 @if($post->type == 'n')
@@ -38,7 +38,7 @@
     </div>
 
     <div class="section">
-        <h2>Últimos Episódios</h2>
+        <h2>Episódios</h2>
         <div class="episodios-container">
             @foreach ($posts as $post)
                 @if($post->type == 'e')

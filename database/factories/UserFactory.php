@@ -2,18 +2,12 @@
 
 namespace Database\Factories;
 
-<<<<<<< HEAD
 use App\Models\Team;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Laravel\Jetstream\Features;
-=======
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
->>>>>>> main
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
@@ -37,15 +31,11 @@ class UserFactory extends Factory
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
-<<<<<<< HEAD
             'two_factor_secret' => null,
             'two_factor_recovery_codes' => null,
             'remember_token' => Str::random(10),
             'profile_photo_path' => null,
             'current_team_id' => null,
-=======
-            'remember_token' => Str::random(10),
->>>>>>> main
         ];
     }
 
@@ -58,7 +48,6 @@ class UserFactory extends Factory
             'email_verified_at' => null,
         ]);
     }
-<<<<<<< HEAD
 
     /**
      * Indicate that the user should have a personal team.
@@ -80,6 +69,4 @@ class UserFactory extends Factory
             'ownedTeams'
         );
     }
-=======
->>>>>>> main
 }

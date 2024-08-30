@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 use App\Livewire\{
     DashboardAdm,
     NoticiaShow
@@ -24,3 +25,9 @@ Route::middleware([
 });
 
 Route::match(['get', 'post'], '/noticia/{slug}', NoticiaShow::class)->name('noticia.show');
+=======
+
+Route::get('/', function () {
+    return view('welcome');
+});
+>>>>>>> main

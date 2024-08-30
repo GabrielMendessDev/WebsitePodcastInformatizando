@@ -1,0 +1,230 @@
+/* Estilo Geral */
+body {
+    background-color: #121212; /* Fundo preto */
+    color: #e0e0e0; /* Texto em cinza claro */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo da seção de herói */
+.hero {
+    background-color: #111; 
+    padding: 40px 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 30px auto;
+    max-width: 1000px;
+    width: 100%; 
+}
+
+.hero h2 {
+    color: #0f0; /* Título em verde neon */
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.hero h4 {
+    color: #fff; /* Autor em branco */
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo da seção de conteúdo */
+.hero p {
+    color: #e0e0e0;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Estilo da área de comentários */
+#areaCommets {
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 255, 0, 0.3); /* Sombra verde neon */
+    margin: 30px auto; /* Centralizar a área de comentários */
+    max-width: 800px; /* Definir a largura máxima da área de comentários */
+    width: 100%; /* Garantir que a área de comentários ocupe toda a largura até o máximo */
+}
+
+#areaCommets > div {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #444;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+#areaCommets > div:hover {
+    background-color: #333;
+}
+
+#areaCommets > div:last-child {
+    border-bottom: none; /* Remove a borda inferior do último comentário */
+}
+
+#areaCommets span {
+    color: #0f0; /* Contador de curtidas em verde neon */
+    font-size: 14px;
+}
+
+#areaCommets a {
+    color: #0f0; /* Link curtir/descurtir em verde neon */
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+#areaCommets a:hover {
+    color: #33ff33;
+    transform: scale(1.1);
+}
+
+/* Estilo para o formulário de comentário */
+form {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 30px auto;
+}
+
+form input[type="text"] {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input[type="text"]::placeholder {
+    color: #b0b0b0;
+}
+
+form input[type="text"]:focus {
+    border-color: #0f0;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5); /* Efeito neon ao focar */
+}
+
+form button[type="submit"] {
+    padding: 12px 25px;
+    background-color: #0f0;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #33ff33;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.5); /* Sombra neon ao clicar */
+}
+
+/* Footer */
+footer.main_footer {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer .content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1080px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+footer .colfooter {
+    margin: 20px;
+    text-align: left;
+}
+
+.titleFooter {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+footer .colfooter ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .colfooter li {
+    margin: 5px 0;
+}
+
+footer .colfooter a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+footer .colfooter a:hover {
+    text-decoration: underline;
+}
+
+.botao {
+    color: #e0e0e0;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.botao:hover {
+    color: #28a745;
+}
+
+.main_footer_copy {
+    margin-top: 20px;
+}
+
+.main_footer_copy p {
+    margin: 5px 0;
+    padding-bottom: 20px;
+}
+
+.main_footer_copy a {
+    text-decoration: none;
+}
+
+.main_footer_copy a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero img {
+        width: 100%;
+    }
+
+    .content-main {
+        padding: 10px;
+    }
+
+    footer .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .colfooter {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+

@@ -1,0 +1,227 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1f1f1f;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 95%;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    margin: 80px 0 20px; /* Ajustado para espaço abaixo do cabeçalho fixo */
+}
+
+.hero {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.hero img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero h2 {
+    color: #b0b0b0;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Estilo para os blocos de episódio */
+.content-main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-main > div {
+    width: 100%;
+    max-width: 1080px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.artigos-container, .noticias-container, .episodios-container{
+    border-radius: 10px; 
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.artigos, .noticias, .episodios {
+    padding: 20px;
+    width: 100%;
+}
+
+.artigos h3, .noticias h3, .episodios h3 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.artigos .descricao, .noticias .descricao, .episodios .descricao {
+    color: #b0b0b0;
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+
+.artigos a.button, .noticias a.button, .episodios a.button {
+    display: inline-block;
+    margin: 5px 10px 0 0;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #28a745; /* Verde */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.artigos a.button:hover, .noticias a.button:hover, .episodios a.button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #333;
+    margin: 40px 0;
+}
+
+/* Footer */
+footer.main_footer {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer .content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1080px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+footer .colfooter {
+    margin: 20px;
+    text-align: left;
+}
+
+.titleFooter {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+footer .colfooter ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .colfooter li {
+    margin: 5px 0;
+}
+
+footer .colfooter a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+footer .colfooter a:hover {
+    text-decoration: underline;
+}
+
+.botao {
+    color: #e0e0e0;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.botao:hover {
+    color: #28a745;
+}
+
+.main_footer_copy {
+    margin-top: 20px;
+}
+
+.main_footer_copy p {
+    margin: 5px 0;
+    padding-bottom: 20px;
+}
+
+.main_footer_copy a {
+    text-decoration: none;
+}
+
+.main_footer_copy a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero img {
+        width: 100%;
+    }
+
+    .content-main {
+        padding: 10px;
+    }
+
+    footer .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .colfooter {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

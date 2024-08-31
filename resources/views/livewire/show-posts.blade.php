@@ -8,8 +8,7 @@
                         <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}">
                             <h3>{{$post->title}}</h3>
                             <p class="descricao">{{$post->title}}</p>
-                            <a href="https://open.spotify.com/episode/7CWaOxJwvMlbBNupDKF7Ub" target="_blank" class="button">Ouvir</a>
-                            <a href="https://open.spotify.com/episode/7CWaOxJwvMlbBNupDKF7Ub" class="button">Saber mais</a>
+                            <a href="{{$post->link}}" target="_blank" class="button">Ver artigo</a>
                         </a>
                     </div>
                 @endif
@@ -28,8 +27,8 @@
                         <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}">
                             <h3>{{$post->title}}</h3>
                             <p class="descricao">{{$post->description}}</p>
-                            <a href="https://open.spotify.com/episode/7CWaOxJwvMlbBNupDKF7Ub" target="_blank" class="button">Ouvir</a>
-                            <a href="https://open.spotify.com/episode/7CWaOxJwvMlbBNupDKF7Ub" class="button">Saber mais</a>
+                            <a href="{{$post->link}}" target="_blank" class="button">Ver notícia</a>
+
                         </a>
                     </div>
                 @endif
@@ -43,12 +42,10 @@
             @foreach ($posts as $post)
                 @if($post->type == 'e')
                     <div class="episodios">
-                        <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}">
                             <h3>{{$post->title}}</h3>
                             <p class="descricao">{{$post->description}}</p>
-                            <a href="https://open.spotify.com/episode/7CWaOxJwvMlbBNupDKF7Ub" target="_blank" class="button">Ouvir</a>
-                            <a href="https://open.spotify.com/episode/7CWaOxJwvMlbBNupDKF7Ub" class="button">Saber mais</a>
-                        </a>
+                            <a href="{{$post->link}}" target="_blank" class="button">Ouvir</a>
+                            <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}" class="button">Saber mais</a>
                     </div>
                 @endif
             @endforeach

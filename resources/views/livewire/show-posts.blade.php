@@ -7,8 +7,10 @@
                     <div class="artigos">
                         <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}">
                             <h3>{{$post->title}}</h3>
-                            <p class="descricao">{{$post->title}}</p>
+                            <p class="descricao">{{$post->caption}}</p>
+                            <p class="descricao">{{$post->description}}</p>
                             <a href="{{$post->link}}" target="_blank" class="button">Ver artigo</a>
+                            <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}" class="button">Ver feedback do artigo</a>
                         </a>
                     </div>
                 @endif
@@ -26,9 +28,10 @@
                     <div class="noticias">
                         <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}">
                             <h3>{{$post->title}}</h3>
+                            <p class="descricao">{{$post->caption}}</p>
                             <p class="descricao">{{$post->description}}</p>
                             <a href="{{$post->link}}" target="_blank" class="button">Ver notícia</a>
-
+                            <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}" class="button">Ver feedback da notícia</a>
                         </a>
                     </div>
                 @endif
@@ -43,9 +46,10 @@
                 @if($post->type == 'e')
                     <div class="episodios">
                             <h3>{{$post->title}}</h3>
+                            <p class="descricao">{{$post->caption}}</p>
                             <p class="descricao">{{$post->description}}</p>
                             <a href="{{$post->link}}" target="_blank" class="button">Ouvir</a>
-                            <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}" class="button">Saber mais</a>
+                            <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}" class="button">Ver feedback do episódio</a>
                     </div>
                 @endif
             @endforeach

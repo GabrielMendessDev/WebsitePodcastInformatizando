@@ -1,4 +1,4 @@
-<div>
+<div class="form-container">
     @if (session('error'))
         <div class="alert alert-danger">
             {{ session('error') }}
@@ -12,7 +12,7 @@
     @livewireScripts
     <form method="post" wire:submit.prevent="create">
         @csrf
-        
+
         <!-- Título -->
         <label for="title">Title</label>
         <input type="text" name="title" id="title" wire:model="title">
@@ -27,7 +27,6 @@
         <label for="content">Text</label>
         <textarea name="content" id="content" wire:model="content"></textarea>
         @error('content') <span>{{ $message }}</span> @enderror
-
 
         <!-- Link -->
         <label for="link">Link</label>

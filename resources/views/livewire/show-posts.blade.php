@@ -10,7 +10,7 @@
                             <p class="descricao">{{$post->caption}}</p>
                             <p class="descricao">{{$post->description}}</p>
                             <a href="{{$post->link}}" target="_blank" class="button">Ver artigo</a>
-                            <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}" class="button">Ver feedback do artigo</a>
+                            <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}" class="button">Enviar ou Ver Feedbacks</a>
                         </a>
                     </div>
                 @endif
@@ -31,7 +31,7 @@
                             <p class="descricao">{{$post->caption}}</p>
                             <p class="descricao">{{$post->description}}</p>
                             <a href="{{$post->link}}" target="_blank" class="button">Ver notícia</a>
-                            <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}" class="button">Ver feedback da notícia</a>
+                            <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}" class="button">Enviar ou Ver Feedbacks</a>
                         </a>
                     </div>
                 @endif
@@ -49,7 +49,7 @@
                             <p class="descricao">{{$post->caption}}</p>
                             <p class="descricao">{{$post->description}}</p>
                             <a href="{{$post->link}}" target="_blank" class="button">Ouvir</a>
-                            <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}" class="button">Ver feedback do episódio</a>
+                            <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}" class="button">Enviar ou Ver Feedbacks</a>
                     </div>
                 @endif
             @endforeach

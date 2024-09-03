@@ -9,10 +9,12 @@
 </head>
 <body>
 <header>
+    
     @if (Route::has('login'))
         <nav>
+            <img class="img-ifrn" src="{{ asset('img/ifrn-logo.png') }}" alt="Logo-ifrn">
             @auth
-                <h4>{{auth()->user()->name}}</h4>
+                <h4 class="username">Olá, {{auth()->user()->name}}!</h4>
                 <a
                     href="{{ url('/') }}"
                     class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
@@ -23,7 +25,7 @@
                     @csrf
 
                     <button type="submit" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ms-2">
-                        {{ __('Log Out') }}
+                        {{ __('Sair da conta') }}
                     </button>
                 </form>
             @else
@@ -47,7 +49,7 @@
     @endif
 </header>
 
-<h1>Bem-vindo(a) ao Podcast Informatizando!</h1>
+<h1 class="title">Bem-vindo(a) ao Podcast Informatizando!</h1>
 <div class="hero">
    <a href="https://open.spotify.com/show/19hR1FMJHPX9YoWz5ixw2h?si=gRDgSIMXQoei6Cr1Ng5CvQ&nd=1" target="_blank">
       <img src="./img/informatizando.jpg" alt="Imagem Podcast"/>

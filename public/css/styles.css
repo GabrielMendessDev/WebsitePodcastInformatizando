@@ -18,11 +18,22 @@ header {
     z-index: 1000;
 }
 
+.username{
+    color: #28a745; 
+}
+
+
+
 nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 95%;
+}
+
+nav .img-ifrn{
+    max-width: 60px; 
+    margin-right:78%;
 }
 
 nav a {
@@ -38,6 +49,10 @@ nav a {
 nav a:hover {
     background-color: #28a745;
     color: #fff;
+}
+
+.title{
+    padding-top: 60px;
 }
 
 h1 {

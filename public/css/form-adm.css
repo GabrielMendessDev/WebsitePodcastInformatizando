@@ -1,62 +1,44 @@
-/* Estilo do formulário específico */
-.form-container {
-    background-color: #1c1c1c;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3);
-    margin: 30px auto;
-    max-width: 600px; /* Largura máxima do formulário */
-    width: 100%;
-    text-align: center;
+/* Estilo Geral */
+body {
+    background-color: #121212;
     color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
 }
 
-.form-container label {
-    display: block;
-    font-size: 1.2rem;
-    color: #0f0;
-    margin-bottom: 10px;
-    text-align: left;
+/* Formulário */
+form {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 30px auto;
 }
 
-.form-container input[type="text"],
-.form-container textarea {
-    width: 100%;
+form label {
+    color: #e0e0e0;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea {
     padding: 12px;
     font-size: 16px;
     border-radius: 8px;
     border: 1px solid #444;
     background-color: #2a2a2a;
     color: #e0e0e0;
-    margin-bottom: 20px;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 15px;
+    outline: none;
 }
 
-.form-container input[type="text"]::placeholder,
-.form-container textarea::placeholder {
+form input[type="text"]::placeholder,
+form textarea::placeholder {
     color: #b0b0b0;
 }
 
-.form-container input[type="text"]:focus,
-.form-container textarea:focus {
-    border-color: #0f0;
-    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
-}
-
-.form-container textarea {
-    resize: none;
-    height: 100px;
-}
-
-.form-container div {
-    margin-bottom: 20px;
-}
-
-.form-container input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-.form-container button[type="submit"] {
+form button[type="submit"] {
     padding: 12px 25px;
     background-color: #0f0;
     color: #000;
@@ -65,16 +47,20 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
-.form-container button[type="submit"]:hover {
+form button[type="submit"]:hover {
     background-color: #33ff33;
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.5);
 }
 
-.form-container span {
-    color: #f00;
-    font-size: 14px;
+/* Checkbox */
+.checkboxes label {
+    margin-right: 20px;
+    color: #e0e0e0;
+}
+
+/* Mensagens de erro */
+.error {
+    color: red;
+    font-size: 0.9rem;
 }

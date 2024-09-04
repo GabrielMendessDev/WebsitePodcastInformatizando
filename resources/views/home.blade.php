@@ -62,6 +62,7 @@
   </h2>   
 </div>
 
+
 @livewire('show-posts')
 
 <footer class="main_footer">

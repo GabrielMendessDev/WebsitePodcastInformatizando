@@ -1,9 +1,11 @@
 <div>
     <!-- showcommets -->
+    
     <div id="areaCommets">
         @foreach ($comments as $comment)
             <div>
                 {{ $comment->author }}  -  {{ $comment->content}}   <br>
+                @auth
                 @if($comment->likes->count())
                     <span>{{ $comment->likes->count() }} curtidas</span>
                     <a href="#" wire:click.prevent="unlikeComment({{ $comment->id }})">Descurtir</a>
@@ -11,9 +13,9 @@
                     <span>{{ $comment->likes->count() }} curtidas</span>
                     <a href="#" wire:click.prevent="likeComment({{ $comment->id }})">Curtir</a>
                 @endif  
-            </div>      
+                @endauth 
+            </div>     
         @endforeach
-
     </div>
     @auth
         <form method="post" wire:submit.prevent="createComment">

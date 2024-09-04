@@ -91,6 +91,7 @@ h1 {
 
 .content-main > div {
     width: 100%;
+    height: auto;
     max-width: 1080px; /* Limita a largura máxima */
     margin: 0 auto; /* Centraliza o conteúdo */
     display: flex;

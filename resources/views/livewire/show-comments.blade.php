@@ -14,6 +14,7 @@
                     <a href="#" wire:click.prevent="likeComment({{ $comment->id }})">Curtir</a>
                 @endif  
                 @endauth 
+                <p style="font-size: 12px;"><i>{{ $comment->created_at->format('d/m/Y H:i:s') }}</i></p>
             </div>     
         @endforeach
     </div>

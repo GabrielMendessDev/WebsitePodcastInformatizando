@@ -5,6 +5,7 @@
         <h2>{{$post->title}}</h2>
         {!! $post->content !!}
         <h5>Publicado por: {{$post->author}}</h5>
+        <h5>Data da publicação: {{ $post->created_at->format('d/m/Y H:i:s') }}</h5>
     </section>
     @livewire('show-comments', ['postId' => $post->id])
 

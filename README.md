@@ -5,8 +5,14 @@ Este projeto é um site que serve como extensão do podcast "Informatizando". No
 ## Imagens
 
 - Página Principal
+![Página Principal](public/img/UserLogado.png)
+
 - Tela de Login
+![Tela de Login](public/img/LOGIN-RPP.png)
+
 - Tela de Cadastro
+![Tela de Cadastro](public/img/REGISTRAR-RPP.png)
+
 - Página de Feedbacks (Comentários dos usuários e quantidade de curtidas)
 
 ## Tecnologias Utilizadas
@@ -100,5 +106,3 @@ Este projeto é um site que serve como extensão do podcast "Informatizando". No
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
 
 ---
-
-Certifique-se de substituir qualquer link ou imagem pelos valores corretos antes de utilizar.

@@ -3,12 +3,6 @@ INSERT INTO `users` (
     `email`,
     `email_verified_at`,
     `password`,
-    `two_factor_secret`,
-    `two_factor_recovery_codes`,
-    `two_factor_confirmed_at`,
-    `remember_token`,
-    `current_team_id`,
-    `profile_photo_path`,
     `created_at`,
     `updated_at`,
     `lvl`
@@ -17,12 +11,6 @@ INSERT INTO `users` (
     'gabriel@gmail.com',
     NULL,                     -- email_verified_at
     '$2y$12$ti1lifKAWtHI9U2VCSXZyevAZxXCeAchVvlE4LczsW7yKvKbUVUYK',    -- password, substituir pela senha criptografada
-    NULL,                     -- two_factor_secret
-    NULL,                     -- two_factor_recovery_codes
-    NULL,                     -- two_factor_confirmed_at
-    NULL,                     -- remember_token
-    NULL,                     -- current_team_id
-    NULL,                     -- profile_photo_path
     NOW(),                    -- created_at
     NOW(),                    -- updated_at
     'adm'                  -- lvl

@@ -9,20 +9,23 @@
 </head>
 <body>
 <header>
+    
     @if (Route::has('login'))
         <nav>
+            <img class="img-ifrn" src="{{ asset('img/ifrn-logo.png') }}" alt="Logo-ifrn">
             @auth
+                <h4 class="username">Olá, {{auth()->user()->name}}!</h4>
                 <a
                     href="{{ url('/') }}"
                     class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                 >
-                    Home
+                    Início
                 </a>
                 <form method="POST" action="{{ route('logout') }}" class="inline">
                     @csrf
 
                     <button type="submit" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ms-2">
-                        {{ __('Log Out') }}
+                        {{ __('Sair da conta') }}
                     </button>
                 </form>
             @else
@@ -30,7 +33,7 @@
                     href="{{ route('login') }}"
                     class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                 >
-                    Log in
+                    Login
                 </a>
 
                 @if (Route::has('register'))
@@ -38,7 +41,7 @@
                         href="{{ route('register') }}"
                         class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                     >
-                        Register
+                        Cadastrar-se
                     </a>
                 @endif
             @endauth
@@ -46,7 +49,7 @@
     @endif
 </header>
 
-<h1>Bem-vindo(a) ao Podcast Informatizando!</h1>
+<h1 class="title">Bem-vindo(a) ao Podcast Informatizando!</h1>
 <div class="hero">
    <a href="https://open.spotify.com/show/19hR1FMJHPX9YoWz5ixw2h?si=gRDgSIMXQoei6Cr1Ng5CvQ&nd=1" target="_blank">
       <img src="./img/informatizando.jpg" alt="Imagem Podcast"/>
@@ -66,6 +69,7 @@
         <div class="colfooter">
             <h3 class="titleFooter">Nossos Links</h3>
             <ul>
+                <li><a href="{{ url('/') }}">Início</a></li>
                 <li><a href="#">Sobre nós</a></li>
                 <li><a href="#">Contato</a></li>
                 <li><a href="#">Termos de Serviço</a></li>
@@ -79,18 +83,10 @@
                 <li><a href="#">Instagram</a></li>
             </ul>
         </div>
-        <div class="colfooter">
-            <h3 class="titleFooter">Aplicativo</h3>
-            <ul>
-                <li><a href="#">Baixar</a></li>
-                <li><a href="#">Atualizações</a></li>
-                <li><a href="#">Suporte</a></li>
-            </ul>
-        </div>
     </div>
     <div class="main_footer_copy">
         <p>&copy; {{ date('Y') }} Podcast Informatizando. Todos os direitos reservados.</p>
-        <p><a href="#">Política de Privacidade</a></p>
+        <p><a href="#">&copy; Desenvolvido por Gabriel Mendes</a></p>
     </div>
 </footer>
 </body>

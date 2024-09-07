@@ -1,0 +1,66 @@
+/* Estilo Geral */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Formulário */
+form {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 30px auto;
+}
+
+form label {
+    color: #e0e0e0;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+form input[type="text"]::placeholder,
+form textarea::placeholder {
+    color: #b0b0b0;
+}
+
+form button[type="submit"] {
+    padding: 12px 25px;
+    background-color: #0f0;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #33ff33;
+}
+
+/* Checkbox */
+.checkboxes label {
+    margin-right: 20px;
+    color: #e0e0e0;
+}
+
+/* Mensagens de erro */
+.error {
+    color: red;
+    font-size: 0.9rem;
+}

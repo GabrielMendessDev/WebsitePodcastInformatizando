@@ -19,7 +19,8 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::match(['get', 'post'], '/dashboard-adm', DashboardAdm::class)->name('dashboard-adm');
+    Route::match(['get', 'post'], '/dashboard-adm', DashboardAdm::class)
+    ->name('dashboard-adm');
 });
 
 Route::match(['get', 'post'], '/noticia/{slug}', NoticiaShow::class)->name('noticia.show');

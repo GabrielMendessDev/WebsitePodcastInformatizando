@@ -1,17 +1,3 @@
-<?php
-
-    use Illuminate\Support\Facades\Auth;
-    $auth = Auth::id();
-
-    /*if (Auth::check()) {
-        $auth = "SIM";
-    } else {
-        $auth = "Não";
-    }*/
-    echo '<h1 style="color: white">Auth: ' . $auth . '</h1>';
-    echo "AAAA";
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 

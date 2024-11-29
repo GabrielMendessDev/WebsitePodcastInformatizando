@@ -10,7 +10,7 @@ INSERT INTO `users` (
     'Gabriel Mendes',
     'gabriel@gmail.com',
     NULL,                     -- email_verified_at
-    '$2y$12$ti1lifKAWtHI9U2VCSXZyevAZxXCeAchVvlE4LczsW7yKvKbUVUYK',    -- password, substituir pela senha criptografada
+    '$2y$12$ti1lifKAWtHI9U2VCSXZyevAZxXCeAchVvlE4LczsW7yKvKbUVUYK',    -- password, substituir pela senha criptografada, => 12345678
     NOW(),                    -- created_at
     NOW(),                    -- updated_at
     'adm'                  -- lvl

@@ -5,6 +5,7 @@ namespace App\Livewire;
 use App\Models\Comments;
 use Livewire\Component;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Auth;
 
 class ShowComments extends Component
 {
@@ -39,23 +40,23 @@ class ShowComments extends Component
 
         // Log dos dados inseridos
         Log::info('Tentando criar um comentário com os seguintes dados:', [
-            'users_id' => auth()->id(),
+            'users_id' => Auth::id(),
             'posts_id' => $this->postId,
-            'author' => auth()->user()->name,
+            'author' => Auth::user()->name,
             'content' => $this->content,
         ]);
 
         // Inserção de dados
-        auth()->user()->comments()->create([
-            'users_id' => auth()->id(),
+        Auth::user()->comments()->create([
+            'users_id' => Auth::id(),
             'posts_id' => $this->postId,
-            'author' => auth()->user()->name,
+            'author' => Auth::user()->name,
             'content' => $this->content,
         ]);
 
         $this->totalComments = Comments::where('posts_id', $this->postId)->count();
 
-        $this->content = ''; 
+        $this->content = '';
     }
 
     public function likeComment($commentId)
@@ -64,7 +65,7 @@ class ShowComments extends Component
 
         if ($comment) {
             $comment->likes()->create([
-                'user_id' => auth()->id(),
+                'user_id' => Auth::id(),
                 'comments_id' => $commentId,
             ]);
         }
@@ -74,6 +75,6 @@ class ShowComments extends Component
     {
         $comment = Comments::findOrFail($commentId);
 
-        $comment->likes()->where('user_id', auth()->id())->delete();
+        $comment->likes()->where('user_id', Auth::id())->delete();
     }
 }

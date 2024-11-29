@@ -10,7 +10,6 @@ class Comments extends Model
 {
     use HasFactory;
 
-
     protected $fillable = ['users_id', 'posts_id', 'author', 'content'];
 
     public function posts()
@@ -24,12 +23,13 @@ class Comments extends Model
 
     public function likes()
     {
-        return $this->hasMany(LikesComments::class)
-                    ->where(function ($query) {
-                        if(auth()->check()) {
-                            $query->where('user_id', auth()->user()->id);
-                        }
-                    });
+        return $this->hasMany(LikesComments::class);
     }
+
+    public function isLikedBy(User $user)
+    {
+        return $this->likes->contains('user_id', $user->id);
+    }
+
 
 }

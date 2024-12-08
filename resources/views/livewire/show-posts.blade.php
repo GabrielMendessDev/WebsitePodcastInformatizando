@@ -10,7 +10,7 @@
                             <p class="descricao">{{$post->description}}</p>
                             <p style="font-size: 14px;"><i>{{ $post->created_at->format('d/m/Y H:i:s') }}</i></p>
                             <a href="{{$post->link}}" target="_blank" class="button">Ver artigo</a>
-                            <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}" class="button">Enviar ou Ver Feedbacks</a>
+                            <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}" class="button">Ver Feedbacks</a>
                     </div>
                 @endif
             @endforeach
@@ -30,7 +30,7 @@
                             <p class="descricao">{{$post->description}}</p>
                             <p style="font-size: 14px;"><i>{{ $post->created_at->format('d/m/Y H:i:s') }}</i></p>
                             <a href="{{$post->link}}" target="_blank" class="button">Ver notícia</a>
-                            <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}" class="button">Enviar ou Ver Feedbacks</a>
+                            <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}" class="button">Ver Feedbacks</a>
                     </div>
                 @endif
             @endforeach
@@ -48,7 +48,7 @@
                             <p class="descricao">{{$post->description}}</p>
                             <p style="font-size: 14px;"><i>{{ $post->created_at->format('d/m/Y H:i:s') }}</i></p>
                             <a href="{{$post->link}}" target="_blank" class="button">Ouvir</a>
-                            <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}" class="button">Enviar ou Ver Feedbacks</a>
+                            <a href="{{ route('noticia.show', ['slug' => $post->slug]) }}" class="button">Ver Feedbacks</a>
                     </div>
                 @endif
             @endforeach
